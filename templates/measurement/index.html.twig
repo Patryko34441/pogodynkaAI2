@@ -2,10 +2,9 @@
 
 {% block title %}Measurement index{% endblock %}
 
-{% if is_granted('ROLE_MEASUREMENT_INDEX') %}
+
     {% block body %}
         <h1>Measurement index</h1>
-
         <table class="table">
             <thead>
                 <tr>
@@ -41,4 +40,3 @@
             <a href="{{ path('app_measurement_new') }}">Create new</a>
         {% endif %}
     {% endblock %}
-{% endif %}
